@@ -1,0 +1,37 @@
+CREATE TABLE Users (
+    Username varchar(255) NOT NULL UNIQUE,
+    Password varchar(255) NOT NULL,
+    Email varchar(255) NOT NULL,
+    FirstName varchar(255) NOT NULL,
+    LastName varchar(255) NOT NULL,
+    Gender varchar(1) NOT NULL,
+    PersonID varchar(255) NOT NULL
+);
+
+CREATE TABLE Persons (
+    PersonID varchar(255) NOT NULL UNIQUE,
+    AssociatedUsername varchar(255) NOT NULL,
+    FirstName varchar(255) NOT NULL,
+    LastName varchar(255) NOT NULL,
+    Gender varchar(1) NOT NULL,
+    FatherID varchar(255),
+    MotherID varchar(255),
+    SpouseID varchar(255)
+);
+
+CREATE TABLE Events (
+    EventID varchar(255) NOT NULL UNIQUE,
+    AssociatedUsername varchar(255) NOT NULL,
+    PersonID varchar(255) NOT NULL,
+    Latitude float,
+    Longitude float,
+    Country varchar(255) NOT NULL,
+    City varchar(255) NOT NULL,
+    EventType varchar(255) NOT NULL,
+    Year int
+);
+
+CREATE TABLE Tokens (
+    Username varchar(255) NOT NULL,
+    AuthToken varchar(255) UNIQUE
+);
