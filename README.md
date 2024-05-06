@@ -1,14 +1,35 @@
-# FamilyMapServerStudent
+# Ancestry Map: Android Application
 
-- Refer to the <b>How To Get Started</b> document on the <b>Family Map Server Program Assignment</b> for more detailed instructions and help with common issues. 
+## Overview
 
-General Instructions:
-1.	Follow the instructions on github regarding how to clone this repository into a directory on your local machine.
-2.	Open IntelliJ.
-3.	Select File -> Open...
-4.	Navigate to the newly cloned repository and select it.
-5.	Allow IntelliJ a few minutes to download any dependencies and set up the project.
-6.	Once it is done loading, make sure the main function found in HelloWorld.java runs without errors. It is found inside the project in the ``src/main/java/HelloWorld.java`` directory. 
-7.	Select Help -> Edit Custom VM Options and add the following line to the end of the file: `-Deditable.java.test.console=true` This is necessary to run the test driver properly.
-8.	Select File -> Invalidate Caches / Restart.
-9.	Once IntelliJ finishes restarting, you should be good to go. Good luck!
+Ancestry Map is an Android application designed to visualize the locations of family members on a map. Utilizing the powerful Google Maps API v2.0, this app allows users to see where their relatives are or were located based on historical and current data. Developed with Java and Android SDK, Ancestry Map integrates advanced features like user authentication and server-side operations to handle personal data securely.
+
+## Features
+
+- **Geographical Visualization**: Displays the locations of family members on Google Maps, offering users a spatial understanding of their family history.
+- **User Registration and Login**: Secure user accounts management enabling registration, login, and data protection.
+- **Family History Data Management**: Users can add, edit, and delete family history information, with changes reflected in real-time on the map.
+- **Authentication and Security**: Utilizes authorization tokens to secure API endpoints, ensuring that data access is protected against unauthorized access.
+
+## Technologies Used
+
+- **Java**: Primary programming language for developing the Android application.
+- **Android SDK**: Used for building the user interface and handling user interactions.
+- **Google Maps API v2.0**: Integrates Google Maps for real-time location visualization.
+- **JUnit**: Employed for testing all functionalities, ensuring reliability and robustness.
+
+## Server-Side Implementation
+
+- **HTTP Server-Side Logic**: Manages user authentication, data generation, registration, and retrieval of family history information securely and efficiently.
+- **Authentication Mechanisms**: Implements token-based authentication to secure access to the application's API endpoints.
+
+## Testing
+
+- **JUnit Testing**: Comprehensive tests written using JUnit to verify the functionality of user registration, login, and API endpoints.
+- **Testing Setup**:
+  - Ensure all unit tests are located in the `src/test/java` directory.
+  - Run tests using Android Studio’s built-in test runner.
+
+## Conclusion
+
+Ancestry Map provides a unique way to explore family history through geographical visualization. By leveraging modern Android development tools and technologies, this app offers a secure and interactive way to connect with one’s ancestry.
