@@ -1,4 +1,4 @@
-# Ancestry Map: Android Application
+# “Ancestry Map”, an Android Application for Visualizing Family Members using Google Maps API v2.0
 
 ## Overview
 
